@@ -1,0 +1,21 @@
+.Section{
+    height: 80.43vh;
+    /*background: linear-gradient(to right bottom, #3000b3, #003ecf, #0062e5, #0083f4, #00a2ff);*/
+    background: transparent;
+    /*background-size: 400% 400%;*/
+}
+
+.title{
+    position: relative;
+    display:inline;
+
+    top:14.6vh;
+    left:19.5vw;
+
+    margin-block-start: 0;
+    margin-block-end: 0;
+
+    color:white;
+
+    font-size: 9rem;
+}

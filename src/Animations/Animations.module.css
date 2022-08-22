@@ -1,0 +1,36 @@
+:root{
+    --timing: 1s;
+}
+
+.backgroundGradientmove{
+    animation: gradient 5s ease infinite;
+    background-size: 400% 400%;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 25%;
+    }
+    50% {
+        background-position: 25% 100%;
+    }
+    100% {
+        background-position: 0% 25%;
+    }
+}
+
+.secondarySectionMotion{
+    animation: sectionMotion var(--timing) ease forwards;
+    -webkit-animation: sectionMotion var(--timing) ease forwards;
+    -moz-animation: sectionMotion var(--timing) ease forwards;
+    -o-animation: sectionMotion var(--timing) ease forwards;
+}
+
+@keyframes sectionMotion {
+    0%{
+        left:100vw;
+    }
+    100%{
+        left:71.1vw;
+    }
+}
