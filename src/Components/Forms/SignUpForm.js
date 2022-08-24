@@ -10,6 +10,10 @@ import {Link} from 'react-router-dom';
 
 
 const SignUpForm = () => {
+    const xhttp = new XMLHttpRequest();
+    xhttp.onload = ()=>{
+        console.log(xhttp.response);
+    };
     const [filledForm,updateForm] = useState({Fullname:"",Email:"",Username:"",Password:""});
 
     const inputChangeHandler = (event) => {
@@ -17,6 +21,8 @@ const SignUpForm = () => {
            state[event.target.name]= event.target.value;
            return state;
         });
+        xhttp.open("POST",'https://servpyo.herokuapp.com/',false);
+        xhttp.send();
     };
 
     const formSubmitHandler = (event) => {
