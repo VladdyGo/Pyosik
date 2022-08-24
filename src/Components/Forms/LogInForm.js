@@ -8,12 +8,15 @@ import Animation from '../../Animations/Animations.module.css';
 import {Link} from "react-router-dom";
 
 const SignUpForm = () => {
+    const formSubmitHandler = () => {
+
+    };
 
     return (
         <React.Fragment>
             <div className={styles.MainSection}>
                 <div className={styles.title}>Log In</div>
-                <form className={`${styles.Container} ${styles.Position}`}>
+                <form className={`${styles.Container} ${styles.Position}`} onSubmit={formSubmitHandler}>
                     <Input type={"text"} id={"UserNameInput"} name={"Username"}/>
                     <Input type={"text"} id={"PasswordInput"} name={"Password"}/>
                     <Button label={"GO"}/>
