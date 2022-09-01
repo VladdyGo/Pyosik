@@ -8,9 +8,21 @@
 
 .Title{
     font-size: 20rem;
+    margin-block-start: 0;
     margin-block-end: 0;
 }
 
 .ErrorDescription{
     text-align: center;
+}
+
+.letterDecoration{
+    display: inline-block;
+    background-image: url("../Images/textDecorations/purpleStripeWithDots.png");
+    background-size: 400%;
+    background-position: 50% 50%;
+    -webkit-background-clip: text;
+    background-repeat: no-repeat;
+    color: transparent;
+    margin:0;
 }
